@@ -1,0 +1,116 @@
+/* Styles cho trang đăng nhập / đăng ký */
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem;
+}
+
+.auth-card {
+  width: min(440px, 100%);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+.auth-card h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+}
+
+.auth-card .subtitle {
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.auth-role-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.auth-role-badge.student {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.auth-role-badge.employer {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.auth-form .field {
+  margin-bottom: 1rem;
+}
+
+.auth-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.auth-form .hint {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.auth-form input,
+.auth-form textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.auth-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.auth-form input:focus {
+  outline: 2px solid rgba(37, 99, 235, 0.35);
+  border-color: var(--primary);
+}
+
+.auth-form .btn-primary {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.form-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.auth-footer {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.auth-switch-role {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.auth-switch-role a {
+  font-weight: 600;
+}

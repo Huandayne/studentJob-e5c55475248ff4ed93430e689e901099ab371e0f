@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng tin tuyển dụng — SinhVienJob</title>
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/post-job.css" />
+  </head>
+  <body class="page-layout">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container post-job-layout">
+        <a href="dashboard.html" class="back-link">← Về khu vực doanh nghiệp</a>
+
+        <h1>Đăng tin tuyển dụng</h1>
+        <p class="lead">Tin sẽ hiển thị công khai cho sinh viên tìm việc.</p>
+
+        <div id="form-error" class="form-error" hidden></div>
+        <div id="form-success" class="form-success" hidden></div>
+
+        <form id="post-job-form" class="job-form">
+          <div class="field">
+            <label for="title">Tiêu đề công việc</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="field">
+            <label for="location">Địa điểm</label>
+            <input type="text" id="location" name="location" placeholder="VD: Hà Nội, Remote" required />
+          </div>
+          <div class="field">
+            <label for="type">Loại hình</label>
+            <select id="type" name="type" required>
+              <option value="">— Chọn —</option>
+              <option value="Thực tập">Thực tập</option>
+              <option value="Bán thời gian">Bán thời gian</option>
+              <option value="Part-time">Part-time</option>
+              <option value="Freelance">Freelance</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="salary">Mức lương / phụ cấp</label>
+            <input type="text" id="salary" name="salary" placeholder="VD: 3–5 triệu/tháng" required />
+          </div>
+          <div class="field">
+            <label for="tags">Thẻ tag <span class="hint">(phân cách bằng dấu phẩy, tuỳ chọn)</span></label>
+            <input type="text" id="tags" name="tags" placeholder="VD: IT, Remote, Sinh viên" />
+          </div>
+          <div class="field">
+            <label for="description">Mô tả công việc</label>
+            <textarea id="description" name="description" required></textarea>
+          </div>
+          <div class="field">
+            <label for="requirementsText"
+              >Yêu cầu <span class="hint">(mỗi dòng một mục)</span></label
+            >
+            <textarea
+              id="requirementsText"
+              name="requirementsText"
+              placeholder="VD: Đang là sinh viên năm 2 trở lên&#10;Có laptop cá nhân"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Đăng tin</button>
+          <a href="my-jobs.html" class="btn btn-outline" style="margin-left: 0.5rem">Xem tin đã đăng</a>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 SinhVienJob</div>
+    </footer>
+
+    <script src="../../js/services/user-store.js"></script>
+    <script src="../../js/services/auth.js"></script>
+    <script src="../../js/services/jobs-store.js"></script>
+    <script src="../../js/utils/form-utils.js"></script>
+    <script src="../../js/components/navbar.js"></script>
+    <script src="../../js/pages/employer/post-job.js"></script>
+  </body>
+</html>

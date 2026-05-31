@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm việc — SinhVienJob</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/jobs.css" />
+  </head>
+  <body class="page-layout">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container">
+        <header class="page-header">
+          <h1>Tìm việc làm</h1>
+          <p>Lọc theo từ khóa, địa điểm và loại hình công việc.</p>
+        </header>
+
+        <form id="filters-form" class="filters">
+          <input
+            type="search"
+            id="filter-keyword"
+            placeholder="Từ khóa (tên việc, công ty, tag)..."
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="filter-location"
+            placeholder="Địa điểm..."
+            autocomplete="off"
+          />
+          <select id="filter-type">
+            <option value="">Tất cả loại hình</option>
+            <option value="Thực tập">Thực tập</option>
+            <option value="Bán thời gian">Bán thời gian</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Freelance">Freelance</option>
+          </select>
+        </form>
+
+        <p id="results-count" class="results-count"></p>
+        <div id="job-list" class="job-list"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 SinhVienJob</div>
+    </footer>
+
+    <script src="../js/utils/paths.js"></script>
+    <script src="../js/services/jobs-store.js"></script>
+    <script src="../js/services/user-store.js"></script>
+    <script src="../js/services/auth.js"></script>
+    <script src="../js/components/navbar.js"></script>
+    <script src="../js/pages/jobs.js"></script>
+  </body>
+</html>

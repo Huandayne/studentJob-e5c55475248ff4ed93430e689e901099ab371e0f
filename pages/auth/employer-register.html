@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký doanh nghiệp — SinhVienJob</title>
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/auth.css" />
+  </head>
+  <body class="page-layout">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container auth-page">
+        <div class="auth-card">
+          <span class="auth-role-badge employer">Doanh nghiệp</span>
+          <h1>Đăng ký tài khoản</h1>
+          <p class="subtitle">Đăng tin tuyển sinh viên, thực tập và part-time.</p>
+
+          <div id="form-error" class="form-error" hidden></div>
+
+          <form id="register-form" class="auth-form">
+            <div class="field">
+              <label for="companyName">Tên công ty / tổ chức</label>
+              <input type="text" id="companyName" name="companyName" required />
+            </div>
+            <div class="field">
+              <label for="name">Người liên hệ</label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="email">Email công ty</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="contactPhone">Số điện thoại (tuỳ chọn)</label>
+              <input type="tel" id="contactPhone" name="contactPhone" autocomplete="tel" />
+            </div>
+            <div class="field">
+              <label for="password">Mật khẩu</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                minlength="6"
+                autocomplete="new-password"
+              />
+            </div>
+            <div class="field">
+              <label for="passwordConfirm">Nhập lại mật khẩu</label>
+              <input
+                type="password"
+                id="passwordConfirm"
+                name="passwordConfirm"
+                required
+                minlength="6"
+                autocomplete="new-password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Tạo tài khoản</button>
+          </form>
+
+          <p class="auth-footer">
+            Đã có tài khoản?
+            <a href="employer-login.html">Đăng nhập</a>
+          </p>
+
+          <p class="auth-switch-role">
+            Bạn là sinh viên?
+            <a href="student-register.html">Đăng ký sinh viên</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 SinhVienJob</div>
+    </footer>
+
+    <script src="../../js/services/user-store.js"></script>
+    <script src="../../js/services/auth.js"></script>
+    <script src="../../js/utils/form-utils.js"></script>
+    <script src="../../js/components/navbar.js"></script>
+    <script src="../../js/pages/auth/employer-register.js"></script>
+  </body>
+</html>

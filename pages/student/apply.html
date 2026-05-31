@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form ứng tuyển — SinhVienJob</title>
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/auth.css" />
+    <link rel="stylesheet" href="../../css/applications.css" />
+  </head>
+  <body class="page-layout">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container auth-page">
+        <div class="auth-card apply-form-card">
+          <a href="#" id="back-to-job" class="back-link">← Quay lại tin tuyển dụng</a>
+
+          <h1>Form ứng tuyển</h1>
+          <p class="subtitle">Điền thông tin và đính kèm CV (PDF, DOC, DOCX — tối đa 2MB).</p>
+
+          <div id="job-summary" class="apply-job-summary"></div>
+          <div id="apply-notice" class="apply-notice" hidden></div>
+          <div id="form-error" class="form-error" hidden></div>
+
+          <form id="apply-form" class="auth-form apply-form">
+            <fieldset class="form-section">
+              <legend>Thông tin liên hệ</legend>
+              <div class="field">
+                <label for="studentName">Họ và tên</label>
+                <input type="text" id="studentName" name="studentName" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="studentEmail">Email</label>
+                <input type="email" id="studentEmail" name="studentEmail" readonly />
+              </div>
+              <div class="field">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label for="studentSchool">Trường <span class="hint">(tuỳ chọn)</span></label>
+                <input type="text" id="studentSchool" name="studentSchool" autocomplete="organization" />
+              </div>
+              <div class="field">
+                <label for="studentMajor">Ngành học <span class="hint">(tuỳ chọn)</span></label>
+                <input type="text" id="studentMajor" name="studentMajor" />
+              </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+              <legend>Hồ sơ ứng tuyển</legend>
+              <div class="field">
+                <label for="cv">CV / Resume <span class="hint">(bắt buộc)</span></label>
+                <input
+                  type="file"
+                  id="cv"
+                  name="cv"
+                  accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                  required
+                />
+                <p id="cv-file-hint" class="field-hint">PDF, DOC hoặc DOCX — tối đa 2MB</p>
+                <p id="cv-selected" class="cv-selected" hidden></p>
+              </div>
+              <div class="field">
+                <label for="portfolioUrl">Link portfolio / GitHub <span class="hint">(tuỳ chọn)</span></label>
+                <input type="url" id="portfolioUrl" name="portfolioUrl" placeholder="https://..." />
+              </div>
+              <div class="field">
+                <label for="message">Lời giới thiệu</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Giới thiệu bản thân, kỹ năng và lý do phù hợp vị trí (tối thiểu 20 ký tự)..."
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary" id="btn-submit">Gửi đơn ứng tuyển</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 SinhVienJob</div>
+    </footer>
+
+    <script src="../../js/utils/paths.js"></script>
+    <script src="../../js/services/user-store.js"></script>
+    <script src="../../js/services/auth.js"></script>
+    <script src="../../js/services/jobs-store.js"></script>
+    <script src="../../js/services/cv-store.js"></script>
+    <script src="../../js/services/applications-store.js"></script>
+    <script src="../../js/utils/form-utils.js"></script>
+    <script src="../../js/components/navbar.js"></script>
+    <script src="../../js/pages/student/apply.js"></script>
+  </body>
+</html>

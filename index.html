@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SinhVienJob — Tìm việc làm cho sinh viên</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body class="page-layout">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container">
+        <section class="hero">
+          <h1>Tìm việc làm & thực tập phù hợp sinh viên</h1>
+          <p>
+            Part-time, thực tập, freelance — gọn nhẹ, dễ tìm, tập trung cho bạn
+            đang đi học.
+          </p>
+          <form id="hero-search-form" class="hero-search">
+            <input
+              type="search"
+              id="hero-keyword"
+              placeholder="Ví dụ: thực tập IT, marketing..."
+              autocomplete="off"
+            />
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+          </form>
+          <a href="pages/jobs.html" class="btn btn-outline">Xem tất cả việc làm</a>
+          <p class="hero-auth-links">
+            <a href="pages/auth/student-login.html">Đăng nhập sinh viên</a>
+            ·
+            <a href="pages/auth/employer-login.html">Đăng nhập doanh nghiệp</a>
+          </p>
+        </section>
+
+        <section class="features">
+          <div class="feature-card">
+            <div class="icon">🎓</div>
+            <h3>Dành cho sinh viên</h3>
+            <p>Việc part-time, thực tập và ca linh hoạt phù hợp lịch học.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">📍</div>
+            <h3>Lọc theo khu vực</h3>
+            <p>Hà Nội, TP.HCM, Đà Nẵng, remote — tìm nhanh theo nơi bạn ở.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>Đơn giản, nhanh</h3>
+            <p>Không rườm rà — xem mô tả và ứng tuyển trong vài bước.</p>
+          </div>
+        </section>
+
+        <section class="recent-jobs">
+          <h2>Việc làm mới đăng</h2>
+          <div id="recent-jobs-list" class="job-preview-list"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 SinhVienJob — Demo UI cho sinh viên</div>
+    </footer>
+
+    <script src="js/utils/paths.js"></script>
+    <script src="js/services/jobs-store.js"></script>
+    <script src="js/services/user-store.js"></script>
+    <script src="js/services/auth.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/pages/home.js"></script>
+  </body>
+</html>

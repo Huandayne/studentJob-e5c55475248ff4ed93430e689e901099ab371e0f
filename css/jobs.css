@@ -1,0 +1,103 @@
+/* Styles riêng cho trang tìm việc (pages/jobs.html) */
+
+.page-header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.75rem;
+}
+
+.page-header p {
+  margin: 0 0 1.5rem;
+  color: var(--text-muted);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.filters input,
+.filters select {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  min-width: 140px;
+}
+
+.filters input[type="search"] {
+  flex: 1;
+  min-width: 180px;
+}
+
+.results-count {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.job-card {
+  background: var(--surface);
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: border-color 0.15s;
+}
+
+.job-card:hover {
+  border-color: #93c5fd;
+}
+
+.job-card h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.job-card h2 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.job-card h2 a:hover {
+  color: var(--primary);
+}
+
+.job-card .company {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.job-card .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+}

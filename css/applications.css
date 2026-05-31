@@ -1,0 +1,198 @@
+/* Ứng tuyển & danh sách đơn */
+
+.page-header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.75rem;
+}
+
+.page-header p {
+  margin: 0 0 1.5rem;
+  color: var(--text-muted);
+}
+
+.results-count {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+}
+
+.filters select {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  min-width: 200px;
+}
+
+.apply-job-summary {
+  background: #f1f5f9;
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.apply-job-summary h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.apply-job-summary p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-badge.accepted {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.application-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.application-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.application-card h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.application-card .meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.application-card .message {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  white-space: pre-wrap;
+}
+
+.application-card .card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employer-status-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.employer-status-form select {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.apply-notice {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.apply-notice.success {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+
+.apply-form-card {
+  width: min(640px, 100%);
+}
+
+.form-section {
+  border: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.form-section legend {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  padding: 0;
+}
+
+.auth-form input[readonly] {
+  background: #f1f5f9;
+  color: var(--text-muted);
+}
+
+.auth-form input[type="file"] {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.field-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.cv-selected {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: #047857;
+  font-weight: 500;
+}
+
+.cv-selected.error {
+  color: #b91c1c;
+}
+
+.cv-attachment {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.auth-form input:disabled,
+.auth-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

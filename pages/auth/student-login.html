@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập sinh viên — SinhVienJob</title>
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/auth.css" />
+  </head>
+  <body class="page-layout">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container auth-page">
+        <div class="auth-card">
+          <span class="auth-role-badge student">Sinh viên</span>
+          <h1>Đăng nhập</h1>
+          <p class="subtitle">Tìm việc làm, thực tập và quản lý hồ sơ của bạn.</p>
+
+          <div id="form-error" class="form-error" hidden></div>
+
+          <form id="login-form" class="auth-form">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="password">Mật khẩu</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                minlength="6"
+                autocomplete="current-password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Đăng nhập</button>
+          </form>
+
+          <p class="auth-footer">
+            Chưa có tài khoản?
+            <a href="student-register.html">Đăng ký sinh viên</a>
+          </p>
+
+          <p class="auth-switch-role">
+            Bạn là doanh nghiệp / nhà tuyển dụng?
+            <a href="employer-login.html">Đăng nhập doanh nghiệp</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 SinhVienJob</div>
+    </footer>
+
+    <script src="../../js/services/user-store.js"></script>
+    <script src="../../js/services/auth.js"></script>
+    <script src="../../js/utils/form-utils.js"></script>
+    <script src="../../js/components/navbar.js"></script>
+    <script src="../../js/pages/auth/student-login.js"></script>
+  </body>
+</html>

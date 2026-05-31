@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khu vực doanh nghiệp — SinhVienJob</title>
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+  </head>
+  <body class="page-layout">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container">
+        <header class="dashboard-header">
+          <h1>Khu vực doanh nghiệp</h1>
+          <p>Quản lý tin tuyển dụng và tìm sinh viên phù hợp.</p>
+        </header>
+
+        <div id="session-info" class="session-info"></div>
+
+        <div class="dashboard-grid">
+          <article class="dashboard-card">
+            <h2>Đăng tin tuyển dụng</h2>
+            <p>Đăng vị trí thực tập, part-time cho sinh viên.</p>
+            <a href="post-job.html" class="btn btn-primary">Đăng tin mới</a>
+          </article>
+          <article class="dashboard-card">
+            <h2>Tin đã đăng</h2>
+            <p>Xem hoặc gỡ các tin tuyển dụng của công ty bạn.</p>
+            <a href="my-jobs.html" class="btn btn-outline">Quản lý tin</a>
+          </article>
+          <article class="dashboard-card">
+            <h2>Ứng viên</h2>
+            <p>Xem và cập nhật trạng thái đơn ứng tuyển.</p>
+            <a href="applications.html" class="btn btn-outline">Xem ứng viên</a>
+          </article>
+        </div>
+
+        <div class="dashboard-actions">
+          <button type="button" id="btn-logout" class="btn btn-outline">Đăng xuất</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 SinhVienJob</div>
+    </footer>
+
+    <script src="../../js/services/user-store.js"></script>
+    <script src="../../js/services/auth.js"></script>
+    <script src="../../js/utils/form-utils.js"></script>
+    <script src="../../js/components/navbar.js"></script>
+    <script src="../../js/pages/employer/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khu vực sinh viên — SinhVienJob</title>
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+  </head>
+  <body class="page-layout">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container">
+        <header class="dashboard-header">
+          <h1>Khu vực sinh viên</h1>
+          <p>Chào mừng bạn trở lại.</p>
+        </header>
+
+        <div id="session-info" class="session-info"></div>
+
+        <div class="dashboard-grid">
+          <article class="dashboard-card">
+            <h2>Tìm việc làm</h2>
+            <p>Xem danh sách việc part-time, thực tập phù hợp.</p>
+            <a href="../jobs.html" class="btn btn-primary">Đi tới tìm việc</a>
+          </article>
+          <article class="dashboard-card">
+            <h2>Form & CV</h2>
+            <p>Ứng tuyển kèm CV trực tiếp từ trang chi tiết việc làm.</p>
+            <a href="../jobs.html" class="btn btn-outline">Tìm việc để ứng tuyển</a>
+          </article>
+          <article class="dashboard-card">
+            <h2>Việc đã ứng tuyển</h2>
+            <p>Theo dõi trạng thái đơn ứng tuyển.</p>
+            <a href="my-applications.html" class="btn btn-outline">Xem đơn của tôi</a>
+          </article>
+        </div>
+
+        <div class="dashboard-actions">
+          <button type="button" id="btn-logout" class="btn btn-outline">Đăng xuất</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 SinhVienJob</div>
+    </footer>
+
+    <script src="../../js/services/user-store.js"></script>
+    <script src="../../js/services/auth.js"></script>
+    <script src="../../js/utils/form-utils.js"></script>
+    <script src="../../js/components/navbar.js"></script>
+    <script src="../../js/pages/student/dashboard.js"></script>
+  </body>
+</html>

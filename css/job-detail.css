@@ -1,0 +1,79 @@
+/* Styles riêng cho trang chi tiết việc làm (pages/job-detail.html) */
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.job-detail-card {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.job-detail-card h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.65rem;
+}
+
+.job-detail-card .company-line {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.job-detail-card .info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.info-item label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.info-item span {
+  font-weight: 600;
+}
+
+.job-detail-card section {
+  margin-top: 1.5rem;
+}
+
+.job-detail-card section h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.job-detail-card section p,
+.job-detail-card section ul {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.job-detail-card section ul {
+  padding-left: 1.25rem;
+}
+
+.apply-bar {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.not-found {
+  text-align: center;
+  padding: 3rem;
+}

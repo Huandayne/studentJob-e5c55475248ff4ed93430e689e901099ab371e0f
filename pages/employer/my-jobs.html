@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tin đã đăng — SinhVienJob</title>
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/post-job.css" />
+    <link rel="stylesheet" href="../../css/jobs.css" />
+  </head>
+  <body class="page-layout">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container">
+        <a href="dashboard.html" class="back-link">← Về khu vực doanh nghiệp</a>
+
+        <header class="page-header">
+          <h1>Tin tuyển dụng của bạn</h1>
+          <p>Quản lý các vị trí đã đăng.</p>
+        </header>
+
+        <div class="page-toolbar">
+          <a href="post-job.html" class="btn btn-primary">+ Đăng tin mới</a>
+        </div>
+
+        <p id="results-count" class="results-count"></p>
+        <div id="my-jobs-list" class="my-jobs-list"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 SinhVienJob</div>
+    </footer>
+
+    <script src="../../js/services/user-store.js"></script>
+    <script src="../../js/services/auth.js"></script>
+    <script src="../../js/utils/paths.js"></script>
+    <script src="../../js/services/jobs-store.js"></script>
+    <script src="../../js/utils/form-utils.js"></script>
+    <script src="../../js/components/navbar.js"></script>
+    <script src="../../js/pages/employer/my-jobs.js"></script>
+  </body>
+</html>
