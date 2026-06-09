@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
       successEl.textContent = "Đã đăng tin thành công. Sinh viên có thể xem trên trang Tìm việc.";
       successEl.hidden = false;
     }
+
+    // Xuất dữ liệu JSON và hiển thị modal hướng dẫn gửi cho Admin
+    if (window.showJobExportModal && result.job) {
+      window.showJobExportModal(result.job);
+    }
+
     form.reset();
   });
 });
